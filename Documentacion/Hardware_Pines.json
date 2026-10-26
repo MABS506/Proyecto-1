@@ -1,0 +1,37 @@
+{
+    "Proyecto" : "Firmware Controlador de Banda Transportadora",
+    "Version"  : 0.1,
+    "Placa"    : " ESP32 - IdeaBoard",
+    "CPU"      : "Dual Core Xtensa LX6",
+    "Reloj"    : "160 Hz",
+    "Notas"    : "El antirrebote a 4 millones de ciclos equivale a 25 ms solo cuando la frecuencia de reloj es de 160 MHz",
+    
+    "Perifericos" :[
+        {
+            "Componente" : "MOTOR_PIN_A",
+            "Pin"        : "GPIO 12",
+            "Tipo"       : "Salida/Output - Analogica",
+            "Funcion"    : "Entrada A para la conexión del motor al puente H (L9110S)",
+            "NOTAS"      : "COLOCAR EL JUMPER DEL SELECTOR DE ALIMENTACIÓN EN SELECT-Vin Y CONECTAR EL CABLE DE ALIMENTACIÓN AC DE LA PLACA"
+        }, 
+        {
+            "Componente" : "MOTOR_PIN_B",
+            "Pin"        : "GPIO 14",
+            "Tipo"       : "Salida/Output - Analogica",
+            "Funcion"    : "Entrada B para la conexión del motor al puente H (L9110S)",
+            "NOTAS"      : "COLOCAR EL JUMPER DEL SELECTOR DE ALIMENTACIÓN EN SELECT-Vin Y CONECTAR EL CABLE DE ALIMENTACIÓN AC DE LA PLACA"
+        },         
+        {
+            "Componente" : "PARADA_EMERGENCIA",
+            "Pin"        : "GPIO 33",
+            "Tipo"       : "Entrada/Input - Digital",
+            "Funcion"    : "Microswitch de final de carrera de la cinta transportadora"
+        },         
+        {
+            "Componente" : "MOTOR_PIN_A",
+            "Pin"        : "GPIO 12",
+            "TIPO"       : "Salida/Ouput - Digital",
+            "Funcion"    : "Entrada A para la conexión del motor al puente H (L9110S)"
+        } 
+    ]   
+}
